@@ -1,7 +1,7 @@
 # Home_Sales
 Using knowledge of SparkSQL to determine key metrics about home sales data
 
-In this you will find a jupyter notebook file with sparkSQL queries that explores home sales data contained in the csv file within the resources folder.
+In this repo you will find a jupyter notebook file with sparkSQL queries that explores home sales data contained in the csv file within the resources folder.
 
 1st the PySpark SQL functions are imported then a spark session is created, next the aforementioned csv is read to display into a sparksql dataframe.
 
@@ -18,6 +18,6 @@ Then the last query is rerun once with a cached temporary sales table then again
 
 The queries run on the cached temporry sales table and on the temporary table created from a paraquet partition of the 'data built' field, have a faster runtime than the uncached and un-paraquated runtime.
 
-Also the query runtimes seem to get quicked as they are run on the the cached ones where at least one field is paraquet partitioned. So one can see the advantage when running multiple queries on the same table.
+Also the query runtimes seem to get quicker as they are run on the the cached ones where at least one field is paraquet partitioned. So one can see the advantage when running multiple queries on the same table.Sometimes more than twice as quick.
 
 Requirements to run; python with the pyspark library, Spark from https://spark.apache.org/downloads.html, and jdk...  
